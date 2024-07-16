@@ -1,0 +1,25 @@
+.star-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  overflow: hidden;
+  z-index: -1; 
+  pointer-events: none;
+  background-color: black;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  box-shadow: 0 0 5px white;
+  animation: twinkling 3s infinite;
+}
+
+@keyframes twinkling {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
